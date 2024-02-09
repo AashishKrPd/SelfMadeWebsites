@@ -18,14 +18,7 @@
     margin: 5px auto;
     justify-content: center;
     align-items: center;
-}
-
-.buts{
-    display: grid;
-    max-width: 250px;
-    margin: 5px auto;
-    background-color: var(--col);
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 3px;
 }
 
 
@@ -34,9 +27,8 @@ label, button{
     max-width: 250px;
     margin: 10px auto;
     padding: 5px 10px;
+    border-radius: 3px;
 }
-
-
 
 button{
     padding: 10px 30px;
