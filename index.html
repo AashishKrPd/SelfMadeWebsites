@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        header a {
+            margin: 20px auto;
+            color: #222222;
+        }
+
+        ol {
+            display: grid;
+            justify-content: space-around;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px 10px;
+            margin: 20px;
+        }
+
+        li {
+            list-style: none;
+            text-align: center;
+            background-color: #5656ffbe;
+            padding: 12px 30px;
+            font-size: 18px;
+            box-shadow: 0px 5px 5px 0px grey;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(254, 254, 254);
+        }
+
+        img {
+            border-radius: 12px;
+            height: 20vh;
+        }
+
+        name {
+            display: block;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1100px) {
+            ol {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            ol {
+                grid-template-columns: 1fr 1fr;
+            }
+            header a {
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            ol {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="https://github.com/AashishKrPd/Self-Made-Websites" target="_blank">Self Made Websites</a></h1>
+    </header>
+    <div>
+        <ol>
+            <li>
+                <a href="/ECE Sem 3 Result Calculator/index.html" target="_blank">
+                    <img src="/ECE Sem 3 Result Calculator/Sem3Gpa.png" alt="Thumbnail"></a>
+                <!-- <a href="https://github.com/AashishKrPd/Sigma-Web-Development-Projects/tree/main/Card%20Design"
+                    target="_blank"> -->
+                    <name>ECE Sem 3 Result Calculator</name>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="Multi Color WebSite/" target="_blank">
+                    <img src="thumbnail/MultiColorWebSite.png" alt="Thumbnail"></a>
+                <a href="https://github.com/AashishKrPd/Sigma-Web-Development-Projects/tree/main/Multi%20Color%20WebSite"
+                    target="_blank">
+                    <name>Multi Color WebSite</name>
+                </a>
+            </li> -->
+            
+        </ol>
+    </div>
+</body>
+
+</html>
