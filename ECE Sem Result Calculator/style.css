@@ -1,37 +1,40 @@
-:root{
+:root {
     --col: rgba(42, 171, 245, 0.871);
     --col2: rgba(0, 90, 246, 0.777);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     font-size: 16px;
 }
 
-nav{
+
+
+nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 550px;
-    margin: auto;
-    background: var(--col2);*/
-    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+    background: var(--col2);
+    justify-content: space-evenly;
+    justify-items: center;
 }
 
-nav button{
+nav button {
     border-radius: 5px;
     margin: 10px;
     padding: 5px 10px;
-    
+
 }
 
-.subject{
+.subject {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: var(--col);
-    max-width: 550px;
-    margin: 5px auto;
+    max-width: 500px;
+    margin: 10px auto;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
@@ -39,25 +42,34 @@ nav button{
 
 
 input,
-label, button{
+label,
+button {
     max-width: 250px;
-    margin: 10px auto;
+    margin: 5px auto;
     padding: 5px 10px;
     border-radius: 3px;
+    justify-items: start;
 }
 
-input{
+.subject label {
+    margin: 10px 5px;
+}
+
+
+
+input {
     max-width: 170px;
+    max-width: 100px;
 }
 
-button{
+button {
     padding: 10px 30px;
     border: 2px solid white;
     background-color: white;
     cursor: pointer;
 }
 
-.title{
+.title {
     max-width: 300px;
     margin: 10px auto;
     padding: 5px 10px;
@@ -67,7 +79,11 @@ button{
 }
 
 
-.notSub{
+.notSub {
     background-color: var(--col2);
     color: white;
+}
+
+.notSub label {
+    margin: 10px auto;
 }
