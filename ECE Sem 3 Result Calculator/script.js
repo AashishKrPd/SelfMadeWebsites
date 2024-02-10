@@ -58,5 +58,5 @@ function calcGpa() {
     console.log(`Total Credits: ${TC}`);
     console.log(`Total (Grade Marks × Credits): ${sc}`);
     console.log(`GPA: ${sc / TC}`);
-    document.getElementById("out").innerText = `Marks: ${s}\nGPA: ${sc / TC}`;
+    document.getElementById("out").innerText = `Marks: ${s}\nGPA: ${(sc / TC).toFixed(5)}`;
 }

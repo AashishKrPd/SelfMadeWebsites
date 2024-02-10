@@ -10,6 +10,7 @@
     font-size: 16px;
 }
 
+
 .subject{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,6 +29,10 @@ label, button{
     margin: 10px auto;
     padding: 5px 10px;
     border-radius: 3px;
+}
+
+input{
+    max-width: 170px;
 }
 
 button{
