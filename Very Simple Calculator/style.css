@@ -1,0 +1,46 @@
+:root {
+    --col: rgb(42, 170, 245);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.subject {
+    display: flex;
+    background-color: var(--col);
+    max-width: 250px;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.buts {
+    display: grid;
+    max-width: 250px;
+    margin: 5px auto;
+    background-color: var(--col);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    /* gap: 12px; */
+}
+
+
+input,
+label,
+button {
+    max-width: 100px;
+    margin: 10px auto;
+    padding: 5px 10px;
+}
+
+.title {
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-weight: bolder;
+    font-size: 18px;
+}

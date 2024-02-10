@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Very Simple Calculator</div>
+        <div class="subject">
+            <label for="sub1">Subject 1 : </label>
+            <input type="text" id="sub1">
+        </div>
+        <div class="subject">
+            <label for="sub2">Subject 2 : </label>
+            <input type="text" id="sub2">
+        </div>
+        <!-- <input type="button" value="+" onclick="calcSum('+')"> -->
+        <div class="buts">
+            <button type="button" onclick="calcSum('+')">+</button>
+            <button type="button" onclick="calcSum('-')">-</button>
+            <button type="button" onclick="calcSum('*')">*</button>
+            <button type="button" onclick="calcSum('/')">/</button>
+            <button type="button" onclick="calcSum('%')">%</button>
+        </div>
+        <div class="subject">
+            <label for="out">Output : </label>
+            <label type="text" id="out">&nbsp;</label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
