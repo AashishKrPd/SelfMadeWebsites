@@ -22,7 +22,7 @@ function AddNewSub() {
         <div>Credits</div>
         <input class="credits" type="Number">
     </div>
-    <button tabindex="-1" class="cls btn" title="Remove this Row" onclick="DelThisSub(event)">x</button>`
+    <button tabindex="-1" class="cls btn" title="Remove this Row" onclick="DelThisSub(event)"></button>`
 
     newDiv.classList.add('subject', 'row', `${type}`)
     subjectRow.appendChild(newDiv)
@@ -35,6 +35,16 @@ function updateSubs() {
 
     for (var i = 0; i < allSubs.length; i++) {
         allSubs[i].textContent = `Sub ${i + 1}`;
+        
+        let row = allSubs[i].parentNode.classList;
+        if (i%2 == 0){
+            row.remove("type1");
+            row.add("type2");
+        }
+        else{
+            row.remove("type2");
+            row.add("type1");
+        }
     }
 }
 

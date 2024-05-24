@@ -10,6 +10,11 @@
     --row2: rgba(0, 90, 246, 0.777);
 }
 
+img{
+    display: flex;
+    color: white;
+}
+
 .row{
     display: flex;
     justify-content: space-around;
@@ -51,6 +56,14 @@ a{
 .subject{
     display: grid;
     grid-template-columns: 5fr 8fr 8fr 1fr;
+}
+
+.subject .btn{
+    background-image: url(minus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
 }
 
 .sub{
