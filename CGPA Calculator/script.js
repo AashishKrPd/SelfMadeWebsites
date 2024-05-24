@@ -22,7 +22,7 @@ function AddNewSub() {
         <div>Credits</div>
         <input class="credits" type="Number">
     </div>
-    <button class="cls btn" title="Remove this Row" onclick="DelThisSub(event)">x</button>`
+    <button tabindex="-1" class="cls btn" title="Remove this Row" onclick="DelThisSub(event)">x</button>`
 
     newDiv.classList.add('subject', 'row', `${type}`)
     subjectRow.appendChild(newDiv)
@@ -98,19 +98,28 @@ function CGPA() {
 // Keyboard Event Handling Part 
 document.addEventListener('keydown', function (event) {
     var focusedElement = document.activeElement;
-    if (focusedElement.getAttribute('title') && event.key == 'Enter') {
-        focusedElement.parentNode.remove()
-        updateSubs();
+    if (event.key === '+') {
+        AddNewSub();
+        event.preventDefault();
     }
-    else{
-        if (event.key === '+') {
-            AddNewSub();
-            event.preventDefault();
+    if (event.key === '-') {
+        let cl = focusedElement.parentNode;
+
+        if (cl.className == "cred-group" || cl.className == "marks-group") {
+            cl = cl.parentNode.lastChild;
         }
-        if (event.key === 'Enter') {
-            CGPA();
-            event.preventDefault();
+        else {
+            cl = cl.lastChild;
         }
+        cl.parentNode.remove();
+        updateSubs();
+
+        event.preventDefault();
+    }
+    if (event.key === 'Enter') {
+        CGPA();
+        event.preventDefault();
+        // }
     }
 });
 
