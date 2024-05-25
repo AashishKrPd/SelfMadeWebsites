@@ -1,3 +1,8 @@
+
+function scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+}
+
 // Add New Subject Row 
 function AddNewSub() {
     let subjectRow = document.querySelector(".subjects")
@@ -26,6 +31,7 @@ function AddNewSub() {
 
     newDiv.classList.add('subject', 'row', `${type}`)
     subjectRow.appendChild(newDiv)
+    scrollToBottom();
 }
 
 // Update Subjects Name
@@ -35,13 +41,13 @@ function updateSubs() {
 
     for (var i = 0; i < allSubs.length; i++) {
         allSubs[i].textContent = `Sub ${i + 1}`;
-        
+
         let row = allSubs[i].parentNode.classList;
-        if (i%2 == 0){
+        if (i % 2 == 0) {
             row.remove("type1");
             row.add("type2");
         }
-        else{
+        else {
             row.remove("type2");
             row.add("type1");
         }
@@ -136,7 +142,7 @@ document.addEventListener('keydown', function (event) {
 // focus on 1st input element 
 document.addEventListener('DOMContentLoaded', function () {
     var firstInput = document.querySelector('input');
-    firstInput.focus();
+    // firstInput.focus();
 
 });
 
