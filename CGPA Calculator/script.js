@@ -142,7 +142,7 @@ document.addEventListener('keydown', function (event) {
 // focus on 1st input element 
 document.addEventListener('DOMContentLoaded', function () {
     var firstInput = document.querySelector('input');
-    // firstInput.focus();
+    firstInput.focus();
 
 });
 
